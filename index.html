@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <title>COVID-19-Stats</title>
+</head>
+<body>
+    <div class="tabs">
+        <div role="tablist" aria-label="COVID-19-Stats">
+          <button role="tab" aria-selected="true" id="home">Home</button>
+          <button role="tab" aria-selected="false" id="world">World</button>
+          <button role="tab" aria-selected="false" id="asia">Asia</button>
+          <button role="tab" aria-selected="false" id="europe">Europe</button>
+          <button role="tab" aria-selected="false" id="africa">Africa</button>
+          <button role="tab" aria-selected="false" id="america">America</button>
+          <button role="tab" aria-selected="false" id="australia">Australia</button>
+        </div>
+        <div role="tabpanel" aria-labelledby="home">
+            <p>COVID-19 INFORMATION</p>
+            <img src="./imgs/home.jpeg" alt="home" height="600" width="800">
+        </div>
+        <div role="tabpanel" aria-labelledby="world" hidden>
+            <p>AROUND THE WORLD</p>
+            <div class="canvasDiv">
+                <canvas class="world canvas"></canvas>
+            </div>
+            <div class="countries worldCountries"></div>
+            <div class="infoType"></div>
+        </div>
+        <div role="tabpanel" aria-labelledby="asia" hidden>
+            <p>Asia Stats</p>
+            <div class="canvasDiv">
+                <canvas class="asia canvas"></canvas>
+            </div>
+            <div class="countries asiaCountries"></div>
+            <div class="infoType"></div>
+        </div>
+        <div role="tabpanel" aria-labelledby="europe" hidden>
+             <p>Europe Stats</p>
+             <div class="container">
+                <div class="leftSide">
+                    <div class="canvasDiv">
+                        <canvas class="europe canvas"></canvas>
+                    </div>
+                    <div class="infoType">
+                        <button class="infoTypeBtn confirmed">confirmed</button>
+                        <button class="infoTypeBtn critical">critical</button>
+                        <button class="infoTypeBtn deaths">deaths</button>
+                        <button class="infoTypeBtn recovered">recovered</button>
+                    </div>
+                </div>
+                <div class="rightSide">
+                    <div class="countryCanvasDiv">
+                        <canvas class="europeCountry countryCanvas"></canvas>
+                    </div> 
+                    <div class="countries europeCountries"></div>
+                </div> 
+            </div>          
+        </div>
+        <div role="tabpanel" aria-labelledby="africa" hidden>
+            <p>Africa Stats</p>
+            <div class="canvasDiv">
+                <canvas class="africa canvas"></canvas>
+            </div>
+            <div class="countries africaCountries"></div>
+            <div class="infoType"></div>
+        </div>
+        <div role="tabpanel" aria-labelledby="america" hidden>
+            <p>America Stats</p>
+            <div class="canvasDiv">
+                <canvas class="america canvas"></canvas>
+            </div>
+            <div class="countries americaCountries"></div>
+            <div class="infoType"></div>
+        </div>
+        <div role="tabpanel" aria-labelledby="australia" hidden>
+            <p>Australia Stats</p>
+            <canvas class="australia canvas"></canvas>
+        </div>
+    </div>
+
+
+    <!-- <canvas id="myChart"></canvas> -->
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+    <script src="./script.js"></script>
+   
+</body>
+</html>  
+
+
