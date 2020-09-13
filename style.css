@@ -28,19 +28,18 @@
 [role="tabpanel"] p{
     font-family: 'Open Sans', sans-serif;
     font-size: 2rem;
-    /* margin: auto; */
+}
+
+[role="tabpanel"] img{
+    margin: 20px;
 }
   
 [role="tablist"]  button {
-    height: 15%;
-    background:#253042;
+    height: 15%;   
     background: #674FBC;
     border: 0;
     color: white;
     font-size: 1rem;
-    /* border-radius: 5px 0 0 5px; */
-    /* --bs-color: rgba(0,0,0,0.1);
-    box-shadow: inset 0 -2px 5px var(--bs-color); */
     cursor:pointer;
     padding: 15px;
 }
@@ -57,11 +56,56 @@ button:focus {
 
 
 .canvasDiv{
-    height: 600px;
+    height: 500px;
     width: 800px;
 }
 
 .container{
     display: flex;
 }
-  
+
+.rightSide, .leftSide{
+    display: flex;
+    flex-direction: column;
+}
+
+.countryCanvasDiv{
+    height: 400px;
+    width: 600px;
+}
+
+.countryCanvas{
+    height: 60%;
+    width: 80%;
+    margin: auto;
+}
+
+.infoTypeBtn{
+    background:#253042;
+    border: 1px solid #253042;
+    border-radius: 5px;
+    color: white;
+    font-size: 1rem;
+    cursor:pointer;
+    padding: 15px;
+}
+
+.country{
+    background:#5a6dc4;
+    border: 1px solid #5a6dc4;
+    border-radius: 5px;
+    color: white;
+    cursor:pointer;
+    padding: 5px;
+    margin: 3px;
+}
+
+.worldCountries{
+    height: 600px;
+}
+
+.canvasDiv .australia{
+    height: 500px;
+    width: 900px;
+    margin: auto;
+}
